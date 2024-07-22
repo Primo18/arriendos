@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Agregar Inmueble{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Agregar Inmueble</h2>
+<form method="POST" enctype="multipart/form-data" class="mb-4">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary"><i class="bi bi-plus-circle"></i> Agregar</button>
+</form>
+<a href="{% url 'listar_inmuebles' %}" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Cancelar</a>
+{% endblock %}

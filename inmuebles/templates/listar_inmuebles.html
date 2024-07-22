@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+
+{% block title %}Lista de Inmuebles{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Lista de Inmuebles</h2>
+<a href="{% url 'agregar_inmueble' %}" class="btn btn-primary mb-3"><i class="bi bi-plus-circle"></i> Agregar Inmueble</a>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Descripción</th>
+            <th>Comuna</th>
+            <th>Dirección</th>
+            <th>Precio</th>
+            <th>Foto</th>
+            <th>Acciones</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for inmueble in inmuebles %}
+        <tr>
+            <td>{{ inmueble.nombre }}</td>
+            <td>{{ inmueble.descripcion }}</td>
+            <td>{{ inmueble.comuna.nombre }}</td>
+            <td>{{ inmueble.direccion }}</td>
+            <td>{{ inmueble.precio }}</td>
+            <td>
+                {% if inmueble.foto %}
+                <img src="{{ inmueble.foto.url }}" alt="Foto de {{ inmueble.nombre }}" class="img-thumbnail">
+                {% else %}
+                No hay foto
+                {% endif %}
+            </td>
+            <td>
+                <a href="{% url 'editar_inmueble' inmueble.pk %}" class="btn btn-warning btn-sm btn-space"><i class="bi bi-pencil"></i> Editar</a>
+                <a href="{% url 'eliminar_inmueble' inmueble.pk %}" class="btn btn-danger btn-sm"><i class="bi bi-trash"></i> Eliminar</a>
+            </td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}

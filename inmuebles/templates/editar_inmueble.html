@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Editar Inmueble{% endblock %}
+
+{% block content %}
+<h2 class="mb-4">Editar Inmueble</h2>
+<form method="POST" enctype="multipart/form-data" class="mb-4">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button type="submit" class="btn btn-primary"><i class="bi bi-save"></i> Guardar Cambios</button>
+</form>
+<a href="{% url 'listar_inmuebles' %}" class="btn btn-secondary"><i class="bi bi-arrow-left"></i> Cancelar</a>
+{% endblock %}

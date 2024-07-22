@@ -1,0 +1,233 @@
+[
+    {
+        "model": "inmuebles.region",
+        "pk": 1,
+        "fields": {
+            "nombre": "Región de Arica y Parinacota"
+        }
+    },
+    {
+        "model": "inmuebles.region",
+        "pk": 2,
+        "fields": {
+            "nombre": "Región de Tarapacá"
+        }
+    },
+    {
+        "model": "inmuebles.region",
+        "pk": 3,
+        "fields": {
+            "nombre": "Región de Antofagasta"
+        }
+    },
+    {
+        "model": "inmuebles.region",
+        "pk": 4,
+        "fields": {
+            "nombre": "Región de Atacama"
+        }
+    },
+    {
+        "model": "inmuebles.region",
+        "pk": 5,
+        "fields": {
+            "nombre": "Región de Coquimbo"
+        }
+    },
+    {
+        "model": "inmuebles.region",
+        "pk": 6,
+        "fields": {
+            "nombre": "Región de Valparaíso"
+        }
+    },
+    {
+        "model": "inmuebles.region",
+        "pk": 7,
+        "fields": {
+            "nombre": "Región Metropolitana de Santiago"
+        }
+    },
+    {
+        "model": "inmuebles.region",
+        "pk": 8,
+        "fields": {
+            "nombre": "Región del Libertador General Bernardo O'Higgins"
+        }
+    },
+    {
+        "model": "inmuebles.region",
+        "pk": 9,
+        "fields": {
+            "nombre": "Región del Maule"
+        }
+    },
+    {
+        "model": "inmuebles.region",
+        "pk": 10,
+        "fields": {
+            "nombre": "Región de Ñuble"
+        }
+    },
+    {
+        "model": "inmuebles.region",
+        "pk": 11,
+        "fields": {
+            "nombre": "Región del Biobío"
+        }
+    },
+    {
+        "model": "inmuebles.region",
+        "pk": 12,
+        "fields": {
+            "nombre": "Región de La Araucanía"
+        }
+    },
+    {
+        "model": "inmuebles.region",
+        "pk": 13,
+        "fields": {
+            "nombre": "Región de Los Ríos"
+        }
+    },
+    {
+        "model": "inmuebles.region",
+        "pk": 14,
+        "fields": {
+            "nombre": "Región de Los Lagos"
+        }
+    },
+    {
+        "model": "inmuebles.region",
+        "pk": 15,
+        "fields": {
+            "nombre": "Región de Aysén del General Carlos Ibáñez del Campo"
+        }
+    },
+    {
+        "model": "inmuebles.region",
+        "pk": 16,
+        "fields": {
+            "nombre": "Región de Magallanes y de la Antártica Chilena"
+        }
+    },
+    {
+        "model": "inmuebles.comuna",
+        "pk": 1,
+        "fields": {
+            "nombre": "Santiago",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmuebles.comuna",
+        "pk": 2,
+        "fields": {
+            "nombre": "Providencia",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmuebles.comuna",
+        "pk": 3,
+        "fields": {
+            "nombre": "Las Condes",
+            "region": 7
+        }
+    },
+    {
+        "model": "inmuebles.comuna",
+        "pk": 4,
+        "fields": {
+            "nombre": "Viña del Mar",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmuebles.comuna",
+        "pk": 5,
+        "fields": {
+            "nombre": "Valparaíso",
+            "region": 6
+        }
+    },
+    {
+        "model": "inmuebles.tipoinmueble",
+        "pk": 1,
+        "fields": {
+            "nombre": "Casa"
+        }
+    },
+    {
+        "model": "inmuebles.tipoinmueble",
+        "pk": 2,
+        "fields": {
+            "nombre": "Departamento"
+        }
+    },
+    {
+        "model": "inmuebles.inmueble",
+        "pk": 1,
+        "fields": {
+            "nombre": "Casa en Santiago",
+            "descripcion": "Casa amplia con jardín",
+            "comuna": 1,
+            "direccion": "Calle Falsa 123",
+            "precio": "1200000.00",
+            "tipo": 1,
+            "foto": "fotos_inmuebles/casa_santiago.jpg"
+        }
+    },
+    {
+        "model": "inmuebles.inmueble",
+        "pk": 2,
+        "fields": {
+            "nombre": "Departamento en Providencia",
+            "descripcion": "Departamento moderno cerca del metro",
+            "comuna": 2,
+            "direccion": "Avenida Siempreviva 456",
+            "precio": "800000.00",
+            "tipo": 2,
+            "foto": "fotos_inmuebles/departamento_providencia.jpg"
+        }
+    },
+    {
+        "model": "inmuebles.inmueble",
+        "pk": 3,
+        "fields": {
+            "nombre": "Casa en Las Condes",
+            "descripcion": "Casa con piscina y quincho",
+            "comuna": 3,
+            "direccion": "Calle Real 789",
+            "precio": "1500000.00",
+            "tipo": 1,
+            "foto": "fotos_inmuebles/casa_las_condes.jpg"
+        }
+    },
+    {
+        "model": "inmuebles.inmueble",
+        "pk": 4,
+        "fields": {
+            "nombre": "Departamento en Viña del Mar",
+            "descripcion": "Departamento con vista al mar",
+            "comuna": 4,
+            "direccion": "Calle del Mar 101",
+            "precio": "900000.00",
+            "tipo": 2,
+            "foto": "fotos_inmuebles/departamento_vina.jpg"
+        }
+    },
+    {
+        "model": "inmuebles.inmueble",
+        "pk": 5,
+        "fields": {
+            "nombre": "Casa en Valparaíso",
+            "descripcion": "Casa histórica en el centro",
+            "comuna": 5,
+            "direccion": "Calle Prat 202",
+            "precio": "1100000.00",
+            "tipo": 1,
+            "foto": "fotos_inmuebles/casa_valparaiso.jpg"
+        }
+    }
+]
